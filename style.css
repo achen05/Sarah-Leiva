@@ -1,0 +1,54 @@
+@font-face {
+  font-family: TexGyreHeros-Condensed;
+  src: url("fonts/texgyreheroscn-regular.otf");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: TexGyreHeros-Condensed;
+  color: white;
+  font-size: 14px;
+}
+
+body {
+  background-image: url("images/Huevos Rancheros.jpg");
+  background-repeat: repeat;
+  background-size: 20px;
+}
+
+.websiteContainer {
+  width: inherit;
+  height: inherit;
+  max-width: 600px;
+  text-align: left;
+}
+
+.columnContainer {
+  display: flex;
+  width: auto;
+  height: auto;
+  max-width: 600px;
+}
+
+.column {
+  width: 50%;
+}
+
+.contentContainer {
+  width: auto;
+  background-color: black;
+  padding: 16px;
+  padding-bottom: 64px;
+}
+
+.image {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+#primaryInformation {
+  padding-bottom: 264px;
+  position: sticky;
+  top: 16px;
+  margin: 16px;
+}
