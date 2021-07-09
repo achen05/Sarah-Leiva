@@ -1,54 +1,81 @@
 @font-face {
-  font-family: TexGyreHeros-Condensed;
-  src: url("fonts/texgyreheroscn-regular.otf");
+  font-family: TexGyreHeros;
+  src: url("fonts/texgyreheros-regular.otf");
 }
+
 * {
   padding: 0px;
   margin: 0px;
-  font-family: TexGyreHeros-Condensed;
-  color: white;
   font-size: 14px;
 }
 
 body {
-  background-image: url("images/Huevos Rancheros.jpg");
-  background-repeat: repeat;
-  background-size: 20px;
+  background-color: #ab5c20;
+  font-family: TexGyreHeros;
 }
-
 .websiteContainer {
-  width: inherit;
-  height: inherit;
-  max-width: 600px;
-  text-align: left;
-}
-
-.columnContainer {
-  display: flex;
-  width: auto;
-  height: auto;
-  max-width: 600px;
-}
-
-.column {
-  width: 50%;
-}
-
-.contentContainer {
-  width: auto;
-  background-color: black;
-  padding: 16px;
-  padding-bottom: 64px;
-}
-
-.image {
-  width: 100%;
-  margin-bottom: 8px;
-}
-
-#primaryInformation {
-  padding-bottom: 264px;
-  position: sticky;
-  top: 16px;
   margin: 16px;
+  text-align: left;
+  max-width: 500px;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 4px;
+}
+.grid-item {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  position: relative;
+}
+
+.grid-item:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.thumbnailContainer {
+  margin-bottom: 64px;
+}
+
+.thumbnailImage {
+  width: 20px;
+}
+
+.moduleLabel {
+  position: absolute;
+  bottom: 8px;
+}
+
+.moduleItemCount {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
+.navigation {
+  position: sticky;
+  top: 20px;
+  border: 1px solid black;
+  height: 20px;
+  max-width: 500px;
+  padding: 8px;
+  background-color: #ab5c20;
+  z-index: 2;
+  margin-bottom: 36px;
+}
+
+.navigationLeft {
+  float: left;
+}
+
+.navigationRight {
+  float: right;
+}
+
+@media only screen and (min-width: 600px) {
 }
