@@ -3,6 +3,11 @@
   src: url("fonts/texgyreheros-regular.otf");
 }
 
+@font-face {
+  font-family: Pilowlava;
+  src: url("fonts/Pilowlava-Regular.otf");
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -20,10 +25,27 @@ body {
 
 }
 
+.nameTitle {
+  position: sticky;
+  top: 20px;
+  z-index: 3;
+  margin-bottom: 36px;
+  font-size: 20px;
+  font-family: Pilowlava;
+  border: 1px solid black;
+  padding: 8px;
+
+}
+
+.nameTitle:hover {
+  cursor: pointer;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 4px;
+  margin-bottom: 36px;
 }
 .grid-item {
   border: 1px solid black;
@@ -57,16 +79,14 @@ body {
   right: 8px;
 }
 
-.navigation {
-  position: sticky;
-  top: 20px;
-  border: 1px solid black;
-  height: 20px;
-  max-width: 500px;
-  padding: 8px;
-  background-color: #ab5c20;
+.fadeEffect {
+  width: 100%;
+  height: 64px;
+  position: fixed;
+  top: 0px;
   z-index: 2;
-  margin-bottom: 36px;
+  background-color: #ab5c20;
+  box-shadow: 0px 20px 20px #ab5c20;
 }
 
 .navigationLeft {
@@ -77,5 +97,53 @@ body {
   float: right;
 }
 
-@media only screen and (min-width: 600px) {
+.pageTitle {
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.collapsibleContainer {
+  border: 1px solid black;
+  margin-bottom: 8px;
+}
+
+.collapsible {
+  background-color: #ab5c20;
+  color: black;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 12px;
+  border: none;
+
+}
+
+.active, .collapsible:hover {
+  background-color: black;
+  color: white;
+}
+
+.collapsible:after {
+  color: black;
+  float: right;
+}
+
+.active:after {
+  color: white;
+}
+
+.content {
+  padding-left: 12px;
+  padding-right: 12px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: black;
+  color: white;
+}
+.collapsibleText {
+  margin-bottom: 16px;
 }
