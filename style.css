@@ -45,6 +45,7 @@ body {
   font-size: 14px;
   border: 1px solid black;
   padding: 8px;
+  border-radius: 4px;
 
 }
 
@@ -81,6 +82,7 @@ body {
   padding: 8px;
   text-align: left;
   position: relative;
+  border-radius: 4px;
 }
 
 .grid-item:hover {
@@ -118,11 +120,14 @@ body {
 
 .collapsibleContainer {
   border: 1px solid black;
+  border-radius: 4px;
   margin-bottom: 8px;
+  background-color: #ab5c20;
 }
 
 .collapsible {
   background-color: #ab5c20;
+  border-radius: 3px;
   color: black;
   cursor: pointer;
   padding: 12px;
