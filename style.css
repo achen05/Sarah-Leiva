@@ -4,8 +4,9 @@
 }
 
 @font-face {
-  font-family: Pilowlava;
-  src: url("fonts/Pilowlava-Regular.otf");
+  font-family: TimesNewerRoman;
+  src: url("fonts/TimesNewerRoman-Regular.otf");
+
 }
 
 * {
@@ -22,7 +23,18 @@ body {
   margin: 16px;
   text-align: left;
   max-width: 500px;
+  margin-bottom: 100px;
 
+}
+
+.fadeEffect {
+  width: 100%;
+  height: 64px;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  background-color: #ab5c20;
+  box-shadow: 0px 20px 20px #ab5c20;
 }
 
 .nameTitle {
@@ -30,7 +42,7 @@ body {
   top: 20px;
   z-index: 3;
   margin-bottom: 36px;
-  font-size: 20px;
+  font-size: 16px;
   font-family: Pilowlava;
   border: 1px solid black;
   padding: 8px;
@@ -39,6 +51,20 @@ body {
 
 .nameTitle:hover {
   cursor: pointer;
+}
+
+.displayText {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  line-height: 32px;
+}
+
+.pageTitle {
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 12px;
 }
 
 .grid-container {
@@ -79,28 +105,12 @@ body {
   right: 8px;
 }
 
-.fadeEffect {
-  width: 100%;
-  height: 64px;
-  position: fixed;
-  top: 0px;
-  z-index: 2;
-  background-color: #ab5c20;
-  box-shadow: 0px 20px 20px #ab5c20;
-}
-
 .navigationLeft {
   float: left;
 }
 
 .navigationRight {
   float: right;
-}
-
-.pageTitle {
-  width: 100%;
-  font-size: 20px;
-  margin-bottom: 12px;
 }
 
 .collapsibleContainer {
@@ -116,7 +126,7 @@ body {
   width: 100%;
   text-align: left;
   outline: none;
-  font-size: 12px;
+  font-size: 14px;
   border: none;
 
 }
