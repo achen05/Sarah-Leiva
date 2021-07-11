@@ -13,6 +13,9 @@
   padding: 0px;
   margin: 0px;
   font-size: 12px;
+  position: relative;
+  z-index: 1px;
+
 }
 
 body {
@@ -20,43 +23,65 @@ body {
   font-family: TexGyreHeros;
 }
 .websiteContainer {
+  position: relative;
   margin: 20px;
   text-align: left;
   max-width: 500px;
   margin-bottom: 100px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 8px;
+  z-index: 3;
+
 
 }
 
 .fadeEffect {
   width: 100%;
-  height: 64px;
-  position: fixed;
+  height: 56px;
+  position: sticky;
   top: 0px;
   z-index: 2;
   background-color: #ab5c20;
   box-shadow: 0px 20px 20px #ab5c20;
+
+  margin-top: -32px;
 }
 
-.nameTitle {
+.navigationBar {
   position: sticky;
   top: 20px;
-  z-index: 3;
-  margin-bottom: 36px;
+  z-index: 4;
+  margin-bottom: 0px;
   font-size: 14px;
   border: 1px solid black;
   padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 4px;
-
+  background-color: #ab5c20;
+  box-shadow: 0px 20px 20px #ab5c20;
+  height: 20px;
 }
 
-.nameTitle:hover {
-  cursor: pointer;
+.navigationLeft, .navigationRight {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+.navigationLeft {
+  float: left;
+}
+
+.navigationRight {
+  float: right;
 }
 
 .displayText {
   text-align: center;
   font-size: 24px;
-  margin-top: 32px;
+  margin-top: 12px;
   margin-bottom: 32px;
   line-height: 32px;
   padding: 12px;
@@ -108,14 +133,6 @@ body {
   position: absolute;
   bottom: 8px;
   right: 8px;
-}
-
-.navigationLeft {
-  float: left;
-}
-
-.navigationRight {
-  float: right;
 }
 
 .collapsibleContainer {
