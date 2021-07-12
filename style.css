@@ -3,12 +3,6 @@
   src: url("fonts/texgyreheros-regular.otf");
 }
 
-@font-face {
-  font-family: TimesNewerRoman;
-  src: url("fonts/TimesNewerRoman-Regular.otf");
-
-}
-
 * {
   padding: 0px;
   margin: 0px;
@@ -68,7 +62,7 @@ body {
   font-size: 14px;
   text-decoration: none;
   color: black;
-  margin-top: -2px;
+  margin-top: -1px;
 }
 
 .navigationLeft {
@@ -182,4 +176,12 @@ body {
 }
 .collapsibleText {
   margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 400px) {
+
+  .navigationLeft, .navigationRight {
+    margin-top: -2px;
+  }
+
 }
